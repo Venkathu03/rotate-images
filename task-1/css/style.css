@@ -1,0 +1,83 @@
+body{
+    background: linear-gradient(90deg,blue,skyblue,blue);
+}
+#container{
+    position: relative;
+    width: 350px;
+    height: 200px;
+    top: 0;
+    left: 0;
+    margin: 15% auto;
+    transform-style: preserve-3d;
+    perspective: 2000px;
+    transform: rotateX(-10deg) rotateZ(-10deg);
+    animation: moving 20s linear infinite;
+}
+@keyframes moving{
+    40%{
+        transform: rotateX(30deg);
+    }
+    80%{
+        transform: rotateX(-30deg);
+    }
+}
+img:hover{
+    width: 340px;
+    height: 220px;
+    cursor: pointer;
+}
+img{
+    position: absolute;
+    width: 320px;
+    height: 200px;
+}
+#images{
+    position: absolute;
+    width: 100%;
+    transform-style: preserve-3d;
+    animation: rotate 20s linear infinite;
+}
+@keyframes rotate{
+    from{
+
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+#img-1{
+    transform: rotateY(60deg) translateZ(300px);
+}
+#img-2{
+    transform: rotateY(120deg) translateZ(300px);
+}
+#img-3{
+    transform: rotateY(180deg) translateZ(300px);
+}
+#img-4{
+    transform: rotateY(240deg) translateZ(300px);
+}
+#img-5{
+    transform: rotateY(300deg) translateZ(300px);
+}
+#img-6{
+    transform: rotateY(360deg) translateZ(300px);
+}
+/* #img-7{
+    transform: rotateY(210deg) translateZ(600px);
+}
+#img-8{
+    transform: rotateY(240deg) translateZ(600px);
+}
+#img-9{
+    transform: rotateY(270deg) translateZ(600px);
+}
+#img-10{
+    transform: rotateY(300deg) translateZ(600px);
+}
+#img-11{
+    transform: rotateY(330deg) translateZ(600px);
+}
+#img-12{
+    transform: rotateY(360deg) translateZ(600px);
+} */
